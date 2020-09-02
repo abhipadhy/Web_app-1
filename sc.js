@@ -29,6 +29,10 @@ setInterval(dte,1000);
 function dte(){
     var dt = new Date();
     var date_final = dt.getDate();
+    if ( date_final < 10)
+    {
+        date_final='0'+date_final;
+    }
     document.querySelector(".dte").innerHTML = date_final;
 }
 dte();
@@ -65,7 +69,11 @@ function monyear(){
                         break;   
         }
     var y= mon.getFullYear();
-    document.querySelector(".one").innerHTML = m + "," + y;
+
+    if (m.length > 5){
+        document.querySelector(".one").innerHTML = m + "," + "<br>" + y;
+    }
+    
 }
 monyear();
 

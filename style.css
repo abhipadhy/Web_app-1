@@ -85,6 +85,13 @@ h3{
     top: 355px;
     background: #B0935E;
 }
+.top{
+    position: absolute;
+    top: 0px;
+    font-size: 30px;
+    font-family: open Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
 
 /*-------------inner background-------------------*/
 
