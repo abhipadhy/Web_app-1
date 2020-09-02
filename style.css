@@ -1,0 +1,319 @@
+/*-------------background-------------------*/
+body{
+    background: #161616;
+    display: flex;
+}
+
+h1{
+    position: absolute;
+    left: 39px;
+    top: 83px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 170px;
+    color: #E3C994;
+}
+
+h2{
+    position: absolute;
+    left: 230px;
+    top: 170px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #73C867;
+}
+
+.one{
+    position: absolute;
+    left: 25px;
+    top: 170px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #3F7837;
+}
+
+
+h3{
+    position: absolute;
+    left: 230px;
+    top: 150px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #3F7837;
+    transition: 0.2s;
+}
+
+.two{
+    position: absolute;
+    left: 25px;
+    top: 150px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #73C867;
+}
+
+.three{
+    position: absolute;
+    left: 25px;
+    top: 82px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #3F7837;
+    opacity: 1;
+}
+.rec1{
+    position: absolute;
+    width:100%;
+    height: 302px;
+    left: 0px;
+    top: 355px;
+    background: #B0935E;
+}
+
+/*-------------inner background-------------------*/
+
+/*-------------left rectangle-------------------*/
+
+.rec2{
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    left: 251px;
+    transition: 0.5s;
+    top: 153px;
+    background: #20201e;
+    box-shadow: 0px 2px 13px 4px rgba(19, 19, 19, 0.3);
+}
+
+.rec2:hover{
+    position: absolute;
+    width: 450px;
+    height: 360px;
+    transition: 0.5s;
+    left: 31px;
+    top: 153px;
+    background: #20201e;
+    box-shadow: 0px 2px 13px 4px rgba(19, 19, 19, 0.3);
+}
+
+.rec2:hover .one{
+    opacity: 0;
+    transition:0.1s;
+}
+
+.rec2:hover .two{
+    opacity: 0;
+    transition:0.1s;
+}
+
+.rec2:hover .three{
+    position: absolute;
+    left: 70px;
+    top: 232px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #3F7837;
+    opacity: 1;
+}
+
+h3:hover{
+    color: white;
+    transition: 0.2s;
+}
+/*-------------right rectangle-------------------*/
+.rec3{
+    position: absolute;
+    width: 849px;
+    height: 557px;
+    left: 441px;
+    top: 53px;
+    background: #3D3B39;
+    box-shadow: 3px 2px 15px 4px rgba(36, 36, 35, 0.3);
+}
+
+.rec32{
+    position: absolute;
+    width: 849px;
+    height: 557px;
+    left: 441px;
+    top: 53px;
+    background: conic-gradient(from 236.96deg at 50% 50%, #282826 0deg, rgba(61, 59, 57, 0) 360deg);
+
+}
+
+.goal{
+    position: absolute;
+    left: 110px;
+    top:65px;
+    font-style: normal;
+    font-weight: 300;
+    color: #E3C994;
+    width: 60px;
+    height: 60px;
+    font-family: open sans;
+    transition:0.5s;
+    font-size: 50px;
+}
+
+.goal:hover{
+    position: absolute;
+    left: 110px;
+    top:55px;
+    font-style: normal;
+    font-weight: 300;
+    color: #e0d6c1;
+    width: 60px;
+    height: 60px;
+    font-family: open sans;
+    transition:0.5s;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.make{
+    position: absolute;
+    left: 119px;
+    top: 123px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    color: #E3C994;
+    text-transform: capitalize;
+    color: #E3C994;
+}
+
+.profile{
+    position: absolute;
+    top: 470px;
+    left:805px;
+}
+.profile:hover{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAABmJLR0QA/wD/AP+gvaeTAAAFdUlEQVRYhbWY228UdRTHP7+Z2Vn20tJ2tyyWQityaWizUSuBBoRN1Bo0SKIC4hU0hgcSH1QkIfiAr0SMf4AkJAQNPJgQErUqVCHcAl5q3N0WAYvQUrpbSne7tXP7+VAK7dJuZwG/bzPn/M588rudc0ZwH2psbPQYhhGE4XLw3giFQpnW1lbrXuOJYpyj0WjAto01ODSjsBTJXMAzxsUELiA5jcJ3qqofamtrG3ygMNHovGrL0rYKeBsIFsGfQYg9mmnv+r2j4+pUzmoh41pQRX3dNukoBwUsB/QiQAC8wFJHEZsj4ZC5MpU+HQc5mfOkM9PQ0BDBsQ5IWFEkwOSStKoec31b24XrrmHq6upqVUX8APKRBwZyR+dth+ZkMvn3lDANDQ0R6VjHgXn/A8htIFUzl+fPkJLnpEjH2v8/gwDMt23PgbV5e3bcQ3193Tbg3WKiah4vmj4NIRQcxy5maG0qHMpeT6VPjL64vUzR6Lxq29LaAb+bSL5gGWXhKhB3JldKm5upboay/W6BspYtF7a3t3cBaKNvHUv7yC1ISXmEYFklixsf4/lVTzMjHOZ6b4rD37Rw9pff0Tw6mRsTHph8BTVFfAi8D7dmJhqNBmzL6AZKphrt9QWpmFnLq+tfZNMbG+6y79m7ny8Pfk3ftUsMD7m6fAem+QIPnTt3LqcA2Laxxg0IQEl5JTWzq9n4+isT2je9uYHZ1bMIlkXchAMoHc7lVsPoaXJodjtSnxZkxZNNCDHxfSmEYOXyJrw+Vys+8nkx8v0RGIWlrkYJgZSSYCBQ0C0YDCDliL+rsNAEoMRiMe1W9p1aUgIOFy91FnS7eKkTpHPL31XgR9aCqnR1dZUxvgwoqMH+Po60HqOr+9qE9itXuzny0zGyA2m3IQH0eH39dEXXdV8xo7I3ezFNg63bd9Jx/sI4W/v5v9i24xMs02SwP1VMWFR12C8WLFgQ9mhKbzEDNY+XcNXDKKqHuTVzmFVdxdUrXVzsvIxjm/R2XcI2h4uCQaghEYvFtN7r13IUsVQwcmp8wTK8vhI8uhfTHGY4l2Eo2490vVduy1gUT/oFQP2iugRQV2yEB6j4n/Fk/WhiOXUvERRVxeP14/UF8Hj9KGrBwnFyCXkSRnOToAXJRlcAioZ/egXB0gqEot1ll45FdqCP3M0+HMddoyAlLbdhVFU/ZFtGhkIpQQiCpSFKQzNRVZWmJYtZ/PijzJlTja57MAyTzsv/cPbcb5w8c5bS8hncTPcwOJCa6r4Z8PmCh2FMCbFoUd3nAt6bkENRCEVq0X0BVjU/xVuvraOionzS6Om+G+zd9xXffn8UYyhLuqcT6TiTue/+M578AMYUV1XlFX84ithMXgcghCBcNRd/oJSPt3/AupfW4PMVvpr8Ph9NSxZTUzObU2d/xeMNkMtMWONkHSk2pFKp7DiYnnQ6MyNcaSF4Zqx3aUUEf0k5O3d8RNOSJwpC5KtmTjXz5tby84kzIATGUHacXcL2RCLZMvo8bvv3plInI5XhZTCSq4SiUBGpZf3La1j93LNFgYyqelYVw4bB+YuXGRxIj90/R+vjyS1j+6j84+AomvmabXmOA/Ol4xDUbfp7u/ls96f3BAOMZHrdQd6pkTtMy1l3EMYVzQX6JlqA+fdMMLk6HCmaE4nEXak/v1UBIJlM/q1q5nLg6IPlkD+alrNsIhAo0Gv39NwYjPWm9qUqwxlgGcX32WOVlbA9Hm/fkk6nJy2MXZViCxcurNI0tiLFO7islW9pAMkXDmJXIpHonsq5qP8zjY2N/n9zuReEkM0SljDSeY6dMQP4SyJOKZKWkkzm0MkrV4bcxi8KJl+xWExLp9MlwjDKpK733++fq/8AwzH2yXWy6aMAAAAASUVORK5CYII=");
+}
+
+.settings{
+    position: absolute;
+    top: 520px;
+    left:810px;
+    transition: 1.5s;
+}
+
+.settings:hover{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAABmJLR0QA/wD/AP+gvaeTAAADZklEQVQ4jZVVz28bVRD+3tvs2kkcJ6mbHhDpBYGEHRQFJSQ9FA6lUi+90AOqyBUkoD2ABP9GK+CABCegF3JFPZByoYfKaXBw4rexMJWFLKFg79uUqrXX87w7PSRexT9Iwhxnv/n0zTez8wROEdwoT7RtmgGABFl1cS739KSakdMQd6zwBxlaGQDSWPwXgOsn1cgBdVxJcLWa7MkBWbuZvmzDuQKI+Z5vtdoocyVxLDE3yhPGp3sm3SyQp5YBgP1Hk2BEYna2JTIvPwHD4bpKAQB56g0z9qRgfFrv5roRW8GsHOOHd8FYg4X7iPAdaaUMB0tg3I4rhPjKSP6dPJWHwDwi8R4kLhqL7zJvXhJi0QyzYhJA3pnObdnt1nIk+I7dbr3mnM192QU4mextm60FBn60TWfZmckWAOQBTA01GwBoXy2QVrvcKE/8J6gveK84Tlop8kpLQ60AAGc6t0VaFUPLvAXgp24+aOy+IkV4GQAittaTM6/+EYuxrSuCUXDOzj08ytU7vMfb0wCWrGdTv8SFvvpASl4TUo4JKcek5DXSpfdjMUisA7jQPzzBdZXqjOAOA1kwIgjccs7kvo6VSl6z280L4oXFZrd1Y488iEJxLXkuWwEA0qVPAPEhBIQA1EgHq2j56jxptdG/uwBAXulj47uf9eeN735OvvvRgN/VapK02mj56vyBFQISqbbdD/zfke44EAf2ymTQ8sD408jwIfmqclRJxNY6M1Z5rzgeq9orjjPzatThn+MOtPqUfFUxoA0wV5JByxM9rfiPJg0HBbuZnhOzsy0AOBiUuCmE+B6AYOZVQHzhZLLfAgDrStqAtuwQ80ePU89WiDMv/QtgMxx/fKmbczJz30ShuMbAMwaeRiHe6ZICAHHwNhgPjr141NhZJK1U/+ocF4c/yA5pd2U4oFYbJa1c2lcLAMB1lQr80lX+e3NsAMuVROCXrsbHqOG+Tlq5XKuNDlrxYhAB8BCJN0m7K8ZCXrK8bhKjO+SpG3FXnrppfPpNRuJdYyFP2l2BxEUA3iHHENV1lSKtfiWttmPl+1tTpFU5JvZVpXtLDm/LNml1/8T7wqwc5s2enSZfVbhaTXKjPEFa7Q7ildPPM/A0CZGjgRzgmnTzHg6sK56EH0o8FBRaq/FjGvA/p6l5Dmb47GC7eydQAAAAAElFTkSuQmCC");
+    transition: 1.5s;
+}
+
+.goali
+{
+    background-image: url(goal1.png);
+    position: absolute;
+    top: 15px;
+    width: 100px;
+    height: 28px;
+    transition: 0.5s;
+    left:510px;
+}
+
+.focus{
+    background-image: url(focus.png);
+    position: absolute;
+    top: 15px;
+    width: 200px;
+    height: 28px;
+    transition: 0.5s;
+    left:585px;
+}
+
+.focus:hover{
+    background-image: url(focus1.png);
+    position: absolute;
+    top: 15px;
+    width: 200px;
+    height: 28px;
+    transition: 0.5s;
+    left:585px;
+}
+
+.days{
+    background-image: url(days.png);
+    position: absolute;
+    top: 15px;
+    width: 200px;
+    height: 28px;
+    transition: 0.5s;
+    left:709px;
+}
+.days:hover{
+    background-image: url(days1.png);
+    position: absolute;
+    top: 15px;
+    width: 200px;
+    height: 28px;
+    transition: 0.5s;
+    left:709px;
+}
+
+.add input{
+    font-family: 'Open Sans', sans-serif;
+    width: 330px;
+    color: whitesmoke;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    left: 159px;
+    top: 80px;
+    background:  #2F2E2C;
+    border: none;
+    outline:none;
+}
+
+.add button{
+    font-family: 'Open Sans', sans-serif;
+    width: 70px;
+    color:  #E3C994;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    left: 500px;
+    top: 80px;
+    background:#1f1e1c ;
+    transition: 0.3s;
+    border: none;
+    outline:none;
+}
+
+.add button:hover{
+    background: #E3C994;
+    color:#2F2E2C ;
+    transition: 0.3s;
+}
+
+.todo{
+    position: absolute;
+    display: none;
+    left: 100px;
+    top: 210px;
+    font-family: 'Open Sans', sans-serif;
+    color:  #E3C994;
+}
+
