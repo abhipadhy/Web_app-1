@@ -280,7 +280,7 @@ h3:hover{
     left:709px;
 }
 
-.add input{
+input{
     font-family: 'Open Sans', sans-serif;
     width: 330px;
     color: whitesmoke;
@@ -294,7 +294,7 @@ h3:hover{
     outline:none;
 }
 
-.add button{
+ button{
     font-family: 'Open Sans', sans-serif;
     width: 70px;
     color:  #E3C994;
@@ -309,7 +309,7 @@ h3:hover{
     outline:none;
 }
 
-.add button:hover{
+ button:hover{
     background: #E3C994;
     color:#2F2E2C ;
     transition: 0.3s;
@@ -317,10 +317,14 @@ h3:hover{
 
 .todo{
     position: absolute;
-    display: none;
+    display: block;
     left: 100px;
     top: 210px;
     font-family: 'Open Sans', sans-serif;
     color:  #E3C994;
+}
+
+.todo ul {
+    display: none;
 }
 

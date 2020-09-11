@@ -79,20 +79,22 @@ monyear();
 
 /*------------------------------------------------------------*/
 document.querySelector(".goal").addEventListener('click',function(){
-    document.querySelector(".add input").style.display = "block";
-    document.querySelector(".add button").style.display = "block";
+    document.querySelector(" input").style.display = "block";
+    document.querySelector("button").style.display = "block";
 
-})
+});
 /*------------------------------------------------------------*/
-function insert(){
-    document.querySelector(".add input").style.display = "none";
-    document.querySelector(".add button").style.display = "none";
-    var an = document.querySelector(".insert").value;
-    document.querySelector(".todo").style.display="block";
-    document.querySelector(".todo").innerHTML = an;
-}
 
-document.querySelector(".add button").addEventListener('click',insert);
+
+document.querySelector(" button").addEventListener('click',function insert(){
+   
+    document.querySelector("input").style.display = "none";
+    document.querySelector(" button").style.display = "none";
+    document.querySelector(".todo ul").style.display="block";
+    var an = document.querySelector(".insert").value;
+    document.querySelector(".todo ul").innerHTML = "<li>" + an + "</li>";
+ 
+});
 
 
 
