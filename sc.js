@@ -92,9 +92,33 @@ document.querySelector(" button").addEventListener('click',function insert(){
     document.querySelector(" button").style.display = "none";
     document.querySelector(".todo ul").style.display="block";
     var an = document.querySelector(".insert").value;
-    document.querySelector(".todo ul").innerHTML = "<li>" + an + "</li>";
+    var list = $("<ul/>").attr("id","myul");
+    $(".todo").append(list);
+    var element= "<li>" + an+ "</li>";
+    $("#myul").append(element);
+
+    details = [
+        {
+            "data":document.querySelector(".insert").value,
+        }
+    ];
+
+    document.querySelector(".insert").value= "";
  
 });
+
+/*------------------------------------------------------------*/
+
+function showdata(){
+    var list = $("<ul/>").attr("id","myul");
+    $(".todo").append(list);
+    var length = details.length;
+    
+    for(i=0; i<length; i++){
+        var element= "<li>" + details[i][data]+ "</li>";
+        $("#myul").append(element); 
+    }
+}
 
 
 
